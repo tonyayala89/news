@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Fonts -->
-    <!-- Swap out "Roboto" for the font(s) you want to use -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Dancing+Script:wght@600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
@@ -16,14 +15,82 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <!-- Your own CSS -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> 
 
     <title>News</title>
   </head>
   <body>
 
-    <div class="container mt-5">
-      <h1>News</h1>
+
+  <div class="container mt-5">
+
+  <h1>The Tony Times</h1>
+
+
+
+     <div class="weatherjumbotron jumbotron-fluid">
+      <div class="container">
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col text-center">
+            <div class="heading">
+            <h2>Evanston Weather Report</h2>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+      <h3>Today's Weather</h3>
+      <p><%=@weather %></p>
+
+      <h4>The Next Seven Days</h4>
+      <p>1.  <%=@extended[1] %></p>
+      <p>2.  <%=@extended[2] %></p>
+      <p>3.  <%=@extended[3] %></p>
+      <p>4.  <%=@extended[4] %></p>
+      <p>5.  <%=@extended[5] %></p>
+      <p>6.  <%=@extended[6] %></p>
+      <p>7.  <%=@extended[7] %></p>
+
+
+
+
+ 
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col text-center">
+            <div class="heading">
+            <h2>Tony's Top Ten Headlines of the Day</h2>
+            </div>
+            </div>
+        </div>
+        </div>
+      <p>Number 1: <a href="<%=@website[0] %>"><%=@title[0] %> by <%=@author[0] %></a></p>
+      <p>Number 2: <a href="<%=@website[1] %>"><%=@title[1] %> by <%=@author[1] %></a></p>  
+      <p>Number 3: <a href="<%=@website[2] %>"><%=@title[2] %> by <%=@author[2] %></a></p>
+      <p>Number 4: <a href="<%=@website[3] %>"><%=@title[3] %> by <%=@author[3] %></a></p>
+      <p>Number 5: <a href="<%=@website[4] %>"><%=@title[4] %> by <%=@author[4] %></a></p>
+      <p>Number 6: <a href="<%=@website[5] %>"><%=@title[5] %> by <%=@author[5] %></a></p>
+      <p>Number 7: <a href="<%=@website[6] %>"><%=@title[6] %> by <%=@author[6] %></a></p>
+      <p>Number 8: <a href="<%=@website[7] %>"><%=@title[7] %> by <%=@author[7] %></a></p>
+      <p>Number 9: <a href="<%=@website[8] %>"><%=@title[8] %> by <%=@author[8] %></a></p>
+      <p>Number 10: <a href="<%=@website[9] %>"><%=@title[9] %> by <%=@author[9] %></a></p>
+
+
+
+
     </div>
 
     <!-- Optional JavaScript -->
